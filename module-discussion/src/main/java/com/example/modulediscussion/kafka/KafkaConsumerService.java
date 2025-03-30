@@ -28,7 +28,7 @@ public class KafkaConsumerService {
         if ("CREATE".equals(message.getAction())) {
             Message tweet = messageMapper.toMessage(message);
             messageRepository.save(tweet);
-            System.out.println("Message created and saved: " + tweet);
+            log.info("Message created and saved: " + tweet);
 
             sendModerationResult(message, "Created");
 
@@ -36,7 +36,7 @@ public class KafkaConsumerService {
 
             int id = message.getId();
             messageRepository.deleteById(id);
-            System.out.println("Message deleted with ID: " + id);
+            log.info("Message deleted with ID: " + id);
 
             sendModerationResult(message, "Deleted");
         }

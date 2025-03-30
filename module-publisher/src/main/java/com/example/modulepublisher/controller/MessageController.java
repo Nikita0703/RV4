@@ -19,9 +19,9 @@ public class MessageController {
     private final KafkaProducerService kafkaProducerService;
     @PostMapping
     public ResponseEntity<MessageDTO> createUser(@Valid @RequestBody MessageDTO userDTO) {
-        userDTO.setAction("CREATE");
         MessageDTO dto = messageService.createMessage(userDTO);
-        kafkaProducerService.sendMessage("InTopic", userDTO);
+        dto.setAction("CREATE");
+        kafkaProducerService.sendMessage("InTopic", dto);
         return ResponseEntity.status(HttpStatus.CREATED).body(dto);
     }
     @DeleteMapping("/{id}")

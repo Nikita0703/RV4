@@ -22,7 +22,7 @@ public class MessageService {
 
     public MessageDTO createMessage(MessageDTO tweetDTO){
         Message tweet = messageMapper.toMessage(tweetDTO);
-        Tweet tweet1 = tweetRepository.findTweetById(tweet.getTweetId()).orElseThrow(() -> new MyException("aaaaaa"));
+       // Tweet tweet1 = tweetRepository.findTweetById(tweet.getTweetId()).orElseThrow(() -> new MyException("aaaaaa"));
          Message m = messageRepository.save(tweet);
         MessageDTO dto = messageMapper.toMessageDTO(m);
         return  dto;
