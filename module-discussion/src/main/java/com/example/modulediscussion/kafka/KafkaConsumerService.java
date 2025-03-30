@@ -1,6 +1,6 @@
 package com.example.modulediscussion.kafka;
 
-import com.example.modulepublisher.dto.MessageDTO;
+import com.example.modulediscussion.dto.MessageDTO;
 import com.example.modulediscussion.entity.Message;
 import com.example.modulediscussion.mapper.MessageMapper;
 import com.example.modulediscussion.repository.MessageRepository;

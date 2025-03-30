@@ -1,12 +1,12 @@
 package com.example.modulediscussion.service;
 
+import com.example.modulediscussion.dto.MessageDTO;
 import com.example.modulediscussion.entity.Message;
 //import com.example.modulediscussion.entity.Tweet;
 import com.example.modulediscussion.exception.MyException;
 import com.example.modulediscussion.mapper.MessageMapper;
 import com.example.modulediscussion.repository.MessageRepository;
 //import com.example.modulediscussion.repository.TweetRepository;
-import com.example.modulepublisher.dto.MessageDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;

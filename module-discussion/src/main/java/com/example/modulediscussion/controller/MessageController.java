@@ -1,7 +1,7 @@
 package com.example.modulediscussion.controller;
 
+import com.example.modulediscussion.dto.MessageDTO;
 import com.example.modulediscussion.service.MessageService;
-import com.example.modulepublisher.dto.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

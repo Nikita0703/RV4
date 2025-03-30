@@ -1,7 +1,7 @@
 package com.example.modulediscussion.mapper;
 
+import com.example.modulediscussion.dto.MessageDTO;
 import com.example.modulediscussion.entity.Message;
-import com.example.modulepublisher.dto.MessageDTO;
 import org.mapstruct.Mapper;
 
 import java.util.List;

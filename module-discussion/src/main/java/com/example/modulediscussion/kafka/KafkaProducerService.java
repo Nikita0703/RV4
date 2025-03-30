@@ -1,6 +1,6 @@
 package com.example.modulediscussion.kafka;
 
-import com.example.modulepublisher.dto.MessageDTO;
+import com.example.modulediscussion.dto.MessageDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.KafkaHeaders;
